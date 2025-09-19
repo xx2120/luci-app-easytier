@@ -54,7 +54,7 @@ jobs:
           - x86_64
           
         sdk:
-          - 22.03.7
+          - 24.10.2
           - SNAPSHOT
 
     steps:
@@ -106,7 +106,7 @@ jobs:
             token: ${{ secrets.GITHUB_TOKEN }}
             body: |
 
-             - 其中 **`openwrt-22.03`** 里面是ipk安装包 **`SNAPSHOT`** 里面是apk安装包
+             - 其中 **`openwrt-24.10.2`** 里面是ipk安装包 **`SNAPSHOT`** 里面是apk安装包
 
              - **`*.apk` 是OpenWrt新版的APK包** 对于apk包跳过证书命令
              `apk add --allow-untrusted luci-app-easytier.apk`
